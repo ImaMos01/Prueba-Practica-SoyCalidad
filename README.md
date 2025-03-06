@@ -13,7 +13,7 @@ Select A.Asignatura, P.Programa, PA.EsOpcional, PA.TieneDocencia, PA.FechaAlta
 
 #### Desarrollo en .NET con MVC:
 <p align="start">
-  <img src='demostracion.png' width='300px' />
+  <img src='demostracion.png' width='700px' />
 </p>
 
 ##### ¿Cómo optimizarías la pantalla para que sea lo más rápida posible, considerando que puede ser utilizada por muchos usuarios a la vez?
