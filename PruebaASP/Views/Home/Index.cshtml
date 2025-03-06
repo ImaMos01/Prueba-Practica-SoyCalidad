@@ -1,0 +1,38 @@
+﻿@model IEnumerable<PruebaASP.DTOs.ProgAsigDto>
+@{
+    ViewData["Title"] = "Prueba Practica 2025";
+}
+
+<div class="text-center">
+    <h1 class="display-4 pb-4">Lista de Asignaturas</h1>
+    <p>Buscar segun: </p>
+    <select id="programasSelect" class="form-select">
+    </select>
+    <div class="table-responsive">
+        <table class="table">
+            <thead id="headTable" class="header-1">
+                <tr>
+                    <th>Asignatura</th>
+                    <th>Programa</th>
+                    <th>Opcional</th>
+                    <th>Tiene Docente</th>
+                    <th>FechaAlta</th>
+                </tr>
+            </thead>
+            <tbody id="headBody" class="fw-normal">
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <th>@(item.Asignatura ?? "No disponible")</th>
+                        <th>@(item.Programa ?? "No disponible")</th>
+                        <th>@(item.EsOpcional ? "Si" : "No")</th>
+                        <th>@(item.TieneDocencia ? "Si" : "No")</th>
+                        <th>@item.FechaAlta.ToString("dd/MM/yyyy")</th>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
