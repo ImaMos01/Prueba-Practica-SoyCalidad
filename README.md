@@ -17,6 +17,6 @@ Select A.Asignatura, P.Programa, PA.EsOpcional, PA.TieneDocencia, PA.FechaAlta
 </p>
 
 ##### ¿Cómo optimizarías la pantalla para que sea lo más rápida posible, considerando que puede ser utilizada por muchos usuarios a la vez?
-. Con Consultas asíncronas.
-. Retornar los datos que sean necesarios.
-. Uso del lazy loading en el frontend
+- Con Consultas asíncronas.
+- Retornar los datos que sean necesarios.
+- Uso del lazy loading en el frontend
